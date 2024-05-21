@@ -15,7 +15,20 @@ const vocabulary = {
     "Hot": "Chaud", "Cold": "Froid", "Friends": "Amis", "Family": "Famille", "Occupation": "Métier",
     "Recreation": "Loisirs", "Dreams": "Rêves", "Games": "Jeux", "Play": "Jouer", "Cute": "Mignon",
     "Dog": "Chien", "Cat": "Chat", "Nice": "Gentil", "Anyone": "N'importe qui", "Inch": "Pouce",
-    "Half": "Moitié"
+    "Half": "Moitié", "House": "Maison", "School": "École", "Teacher": "Professeur", "Student": "Étudiant",
+    "Morning": "Matin", "Evening": "Soir", "Night": "Nuit", "Work": "Travail", "Office": "Bureau",
+    "Market": "Marché", "Park": "Parc", "Hospital": "Hôpital", "Police": "Police", "Doctor": "Docteur",
+    "Nurse": "Infirmière", "Breakfast": "Petit déjeuner", "Lunch": "Déjeuner", "Dinner": "Dîner",
+    "Friend": "Ami", "Family": "Famille", "Brother": "Frère", "Sister": "Sœur", "Father": "Père",
+    "Mother": "Mère", "Child": "Enfant", "Baby": "Bébé", "Window": "Fenêtre", "Kitchen": "Cuisine",
+    "Bathroom": "Salle de bain", "Bedroom": "Chambre", "Living Room": "Salon", "Key": "Clé", "Wallet": "Portefeuille",
+    "Money": "Argent", "Credit Card": "Carte de crédit", "Food": "Nourriture", "Drink": "Boisson", "Tea": "Thé",
+    "Coffee": "Café", "Milk": "Lait", "Sugar": "Sucre", "Salt": "Sel", "Pepper": "Poivre",
+    "Restaurant": "Restaurant", "Hotel": "Hôtel", "Airport": "Aéroport", "Train Station": "Gare", "Bus Stop": "Arrêt de bus",
+    "Taxi": "Taxi", "Bicycle": "Vélo", "Motorcycle": "Moto", "Boat": "Bateau", "Ship": "Navire",
+    "Subway": "Métro", "Library": "Bibliothèque", "Bookstore": "Librairie", "Movie": "Film", "Music": "Musique",
+    "Dance": "Danse", "Song": "Chanson", "Singing": "Chanter", "Playing": "Jouer", "Running": "Courir",
+    "Walking": "Marcher", "Sleeping": "Dormir", "Eating": "Manger", "Drinking": "Boire", "Cooking": "Cuisiner"
 };
 
 let words = Object.keys(vocabulary);
@@ -50,7 +63,7 @@ function checkGuess() {
     // Reset the game after 2 seconds
     setTimeout(() => {
         resetGame();
-    }, 2000);
+    }, 5000);
 }
 
 function resetGame() {
