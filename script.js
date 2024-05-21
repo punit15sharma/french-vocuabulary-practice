@@ -1,6 +1,6 @@
 const vocabulary = {
     "Seat": "Siège", "Chair": "Chaise", "Tram": "Tram", "Bus": "Bus", "Table": "Table",
-    "Road": "Route", "Car": "Voiture", "Bread": "Pain", "Eggs": "Œufs", "Vegetables": "Légumes",
+    "Road": "Route", "Car": "Voiture", "Bread": "Pain", "Eggs": "oeufs", "Vegetables": "Légumes",
     "Fruits": "Fruits", "Shopping": "Achats", "Grocery": "Épicerie", "Phone": "Téléphone", "Haircut": "Coupe de cheveux",
     "Men": "Hommes", "Women": "Femmes", "Student": "Étudiant", "Dress": "Robe", "Water": "Eau",
     "Drinks": "Boissons", "Pay": "Payer", "Card": "Carte", "With": "Avec", "Door": "Porte",
@@ -19,7 +19,7 @@ const vocabulary = {
     "Morning": "Matin", "Evening": "Soir", "Night": "Nuit", "Work": "Travail", "Office": "Bureau",
     "Market": "Marché", "Park": "Parc", "Hospital": "Hôpital", "Police": "Police", "Doctor": "Docteur",
     "Nurse": "Infirmière", "Breakfast": "Petit déjeuner", "Lunch": "Déjeuner", "Dinner": "Dîner",
-    "Friend": "Ami", "Family": "Famille", "Brother": "Frère", "Sister": "Sœur", "Father": "Père",
+    "Friend": "Ami", "Family": "Famille", "Brother": "Frère", "Sister": "Soeur", "Father": "Père",
     "Mother": "Mère", "Child": "Enfant", "Baby": "Bébé", "Window": "Fenêtre", "Kitchen": "Cuisine",
     "Bathroom": "Salle de bain", "Bedroom": "Chambre", "Living Room": "Salon", "Key": "Clé", "Wallet": "Portefeuille",
     "Money": "Argent", "Credit Card": "Carte de crédit", "Food": "Nourriture", "Drink": "Boisson", "Tea": "Thé",
@@ -56,7 +56,7 @@ function checkGuess() {
         correctCounter++;
         document.getElementById('correctCounter').textContent = correctCounter;
     } else {
-        message.textContent = `Incorrect. The correct translation for "${randomWord}" is "${correctTranslation}".`;
+        message.innerHTML = `Incorrect. The correct translation for "${randomWord}" is "${correctTranslation}". Checkout <a href="https://github.com/punit15sharma/french-vocuabulary-practice/blob/main/French_English_Vocabulary.pdf"> this</a> `;
         message.style.color = "red";
     }
 
